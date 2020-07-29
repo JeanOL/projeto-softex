@@ -1,0 +1,2 @@
+# projeto-softex
+ &lt;h1> Projeto Softex Esfotados&lt;/h1> &lt;p>Estudo feito com intuito de trazer uma implementação de site responsivo, simulando uma loja virtual de estofados, com 15 modelos de sofás, páginas de (Produtos,Pedidos e Contatos.)&lt;/p>   &lt;h3>Linguagens&lt;/h3>   &lt;ul>     &lt;li>HTML5&lt;/li>     &lt;li>CSS3&lt;/li>     &lt;li>JavaScript&lt;/li>   &lt;/ul>   &lt;h3>Bibliotecas&lt;/h3> &lt;ul>  &lt;li>Bootstrap e Jquery.&lt;/li> &lt;/ul>  # projeto-softex
