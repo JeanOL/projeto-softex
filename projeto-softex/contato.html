@@ -1,0 +1,165 @@
+<!DOCTYPE html> 
+<html>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <head>
+        <title>Contato</title>
+        <script src="_js/contato.js"></script>
+     </head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="_css/contato.css"> 
+
+    <body>
+            <!----------------------------- MENU ------------------------>
+        <header>
+          <nav id="menu">
+              <div class="toggle">
+                <i class="fa fa-bars menu" aria-hidden="true"></i>
+              </div>
+               <ul class="lista">
+                 <li><a href="index.html"> Início </a></li>
+                 <li><a href="empresa.html"> A Empresa</a></li>
+                 <li><a href="produtos.html">Produtos</a></li>
+                 <li><a href="pedidos.html"> Pedidos </a></li> 
+                 <li><a href="contato.html"> Contato </a></li>
+              </ul>
+           </nav>
+         </header>
+
+       <section id="banner">
+
+                <header id="cabecalho">
+                     <hgroup>
+                           <h1>Contato</h1>
+                           <h2>FALE CONOSCO</h2>
+                     </hgroup>
+                  </header>     
+             </section>   
+
+             <!-------------------- FORMULÁRIO ------------------------>
+
+            <table id="usuario">
+             <form name="formcont" method="post" action="grava-pedido.jsp"> 
+                  <tr>
+                    <td><input type="text" name="nome" id="cNome" maxlength="30" placeholder="NOME COMPLETO"></td>
+                    <td><input type="email" name="email" id="cMail" maxlength="40" placeholder="EMAIL (EX: nome@hotmail.com)"></td>  
+                  </tr>
+
+                  <tr>
+                    <td><input type="text" name="tel" id="cTel" maxlength="11" placeholder="TEL (EX: (XX) XXXXX-XXXX)"></td>               
+                    <td><input type="text" name="cel" id="cCel" maxlength="11" placeholder="CEL (EX: (XX) XXXXX-XXXX)"></td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                     <input type="text" name="cid" id="cCid" maxlength="40" placeholder="CIDADE" list="cidades"/>
+                      <datalist id="cidades">
+                         <option value="São Paulo"></option>
+                         <option value="Guarulhos"></option>
+                         <option value="Santos"></option>
+                         <option value="Mogi das Cruzes"></option>
+                         <option value="Diadema"></option>
+                         <option value="Campinas"></option>
+                         <option value="São Bernardo do Campo"></option>
+                         <option value="Santo André"></option>
+                         <option value="Itapevi"></option>
+                         <option value="Rio de Janeiro"></option>
+                         <option value="Nova Iguaçu"></option>
+                         <option value="Niterói"></option>
+                         <option value="Belford Roxo"></option>
+                      </datalist>   
+                      </td>   
+
+                <td><input name="est" id="cEst" list="estados" placeholder="ESTADO (UF)">
+                 <datalist id="estados">
+                <optgroup label="Região Sudeste">
+                      <option value="RJ" >Rio de Janeiro</option>
+                      <option value="SP" selected>São Paulo</option>
+                      <option value="MG" >Minas Gerais</option>
+                </optgroup>      
+
+                 <optgroup label="Região Sul">
+                      <option value="ES" >Espírito Santo</option>
+                      <option value="RS" >Rio Grande do Sul</option>
+                      <option value="SC" >Santa Catarina</option>
+                      <option value="PR" >Paraná</option>
+                </optgroup>    
+
+                <optgroup label="Região Centro-Oeste"> 
+                      <option value="GO" >Goiás</option>
+                      <option value="MT" >Mato Grosso</option>
+                      <option value="MS" >Mato Grosso do Sul</option>
+                      <option value="DF" >Distrito Federal</option>
+                </optgroup>
+
+                <optgroup label="Região Norte">
+                      <option value="AC" >Acre</option>
+                      <option value="AM" >Amazonas</option>
+                      <option value="AP" >Amapá</option>
+                      <option value="PA" >Pará</option>
+                      <option value="RO">Rondônia</option>
+                      <option value="RR">Roraima</option>
+                      <option value="TO">Tocantins</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                      <option value="AL">Alagoas</option>
+                      <option value="BA">Bahia</option>
+                      <option value="CE">Ceará</option>
+                      <option value="MA">Maranhão</option>
+                      <option value="PB">Paraíba</option>
+                      <option value="PE">Pernambuco</option>
+                      <option value="PI">Piauí</option>
+                      <option value="RN">Rio Grande do Norte</option>
+                      <option value="SE">Sergipe</option>
+                </optgroup> 
+                </datalist>          
+              </input></td>              
+              </tr> 
+
+              <tr>
+                <td colspan="2">
+                  <textarea name="msg" id="cMsg" placeholder="DEIXE AQUI SUA MENSAGEM"></textarea>
+                </td>
+              </tr>   
+           </table>              
+                    <div id="bt">
+                      <input class="button" type="submit" value="ENVIAR" onclick="return validar()">
+                      <input class ="button" type="reset" value="LIMPAR"> 
+                    </div> 
+
+                </form>
+           <!-------------------------- MAPA ------------------------------>
+
+        <div id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.1392692771174!2d-46.56968448502414!3d-23.455440384735557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef5b11ac0c949%3A0x40327bca2398928f!2sR.+Santo+Ant%C3%B4nio%2C+1631+-+Vila+Galvao%2C+Guarulhos+-+SP%2C+07071-060!5e0!3m2!1spt-BR!2sbr!4v1542288471264"></iframe>    
+       </div>
+
+
+
+     <footer>
+            <p class="endereco">RUA SANTO ANTÔNIO | NÚMERO 1631 | BAIRRO VILA GALVÃO | GUARULHOS - SP | 07071-000</p>
+            <a href="https://www.facebook.com/Softexestofadosme/" class="fa fa-facebook" target="_blank">
+            </a>
+            <a href="https://instagram.com/softexhome?utm_source=ig_profile_share&igshid=1dtcjpzax4se5" class="fa fa-instagram" target="_blank"></a>
+      </footer>
+
+                   <!------------ SCRIPT MENU --------------->
+          <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+           <script type="text/javascript">
+              $(document).ready(function(){
+                $('.menu').click(function(){
+                  $('ul').toggleClass('active');
+                })
+              })
+           </script>
+
+    </body>    
+
+</html>

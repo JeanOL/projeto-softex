@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <head>
+        <title>Woods</title>
+     </head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="../_paginas/css-pags/foto.css"> 
+
+    <body>
+            <!----------------------------- MENU ------------------------>
+        <header>
+          <nav id="menu">
+              <div class="toggle">
+                <i class="fa fa-bars menu" aria-hidden="true"></i>
+              </div>
+               <ul class="lista">
+                 <li><a href="..\index.html"> Início </a></li>
+                 <li><a href="..\empresa.html"> A Empresa</a></li>
+                 <li><a href="..\produtos.html">Produtos</a></li>
+                 <li><a href="..\pedidos.html"> Pedidos </a></li> 
+                 <li><a href="..\contato.html"> Contato </a></li>
+              </ul>
+           </nav>
+         </header>
+
+       <section id="banner">
+
+                <header id="cabecalho">
+                     <hgroup>
+                           <h1>Produtos</h1>
+                           <h2>WOODS</h2>
+                     </hgroup>
+                  </header>     
+             </section>   
+
+         <!----------------------- DESCRIÇÃO ------------------------>
+           
+          <div id="descricao">
+           <figure>
+              <img src="../_imagens/sofa14.jpg" alt="woods">
+             <figcaption>
+              <p>
+              Sofá de 6 lugares, sendo um deles com o assento mais esticado possibiltando até um sétimo lugar, trazendo muito conforto e espaço.
+              </p>
+               <a href="..\pedidos.html"><button class="fazer-pedido">FAÇA SEU PEDIDO</button></a>
+              </figcaption> 
+          </figure></div>
+
+     <footer>
+            <p class="endereco">RUA SANTO ANTÔNIO | NÚMERO 1631 | BAIRRO VILA GALVÃO | GUARULHOS - SP | 07071-000</p>
+            <a href="https://www.facebook.com/Softexestofadosme/" class="fa fa-facebook" target="_blank">
+            </a>
+            <a href="https://instagram.com/softexhome?utm_source=ig_profile_share&igshid=1dtcjpzax4se5" class="fa fa-instagram" target="_blank"></a>
+      </footer>
+
+                   <!------------ SCRIPT MENU --------------->
+          <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+           <script type="text/javascript">
+              $(document).ready(function(){
+                $('.menu').click(function(){
+                  $('ul').toggleClass('active');
+                })
+              })
+           </script>
+
+    </body>    
+
+</html>

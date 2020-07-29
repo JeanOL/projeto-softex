@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+/*------------- MENU -------------------*/
+
+    nav {
+        width: 100%;
+        background: #000;
+    }
+
+    ul {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    ul.lista li {
+        font-family: Gill Sans MT;
+        text-transform: uppercase;
+        list-style: none;
+        display: inline-block;
+        font-size: 12pt;
+        padding: 15px;
+    }
+
+
+    ul.lista li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    ul.lista li:hover {
+        background: red;
+        transition: 0.5s;
+    }
+
+    .toggle {
+        width: 100%;
+        padding: 10px 20px;
+        background: #000;
+        text-align: right;
+        box-sizing: border-box;
+        color: #fff;
+        font-size: 30px;
+        display: none;
+    }
+
+/*----------------- MENU RESPONSIVO -----------------*/
+    @media (max-width: 790px) {
+
+        .toggle {
+            display: block;
+        }
+
+    ul {
+        width: 100%;
+        display: none;
+    }
+
+    ul.lista li {
+        display: block;
+        text-align: center;
+    }
+
+    .active {
+        display: block;
+    }
+}
+
+/*------------------------- CORPO -----------------------*/
+
+      section#banner {
+        margin-bottom: 70px;
+      } 
+
+      header#cabecalho {
+        background-color: red;
+        margin: 0px;
+        padding: 30px;
+        margin-bottom: 20px;
+      }
+
+      header hgroup h1 {
+        text-align: right;
+        font-family: Gill Sans MT;
+        font-style: italic;
+        margin-right: 20px;
+        color: #fff;
+        font-size: 4vw;
+      }
+
+      h2 {
+        color: #fff;
+        background-color: #000;
+        text-align: center;
+        font-family: Gill Sans MT;
+        padding: 10px;
+        margin: 0px -30px -50px;
+        font-size: 18pt;
+      }
+
+
+      /* --------------- DESCRIÇÃO ------------------*/
+
+      div#descricao {
+      	margin-left: 40%;
+      	margin-left: auto;
+      	margin-right: auto;
+      }
+
+      figure {
+      	display: block;
+      	margin-left: auto;
+      	margin-right: auto;
+      	margin-top: -20px;
+      	margin-bottom: 30px;
+      	width: 580px;
+      	padding: 10px;
+      	text-align: justify;
+      	border: 1px solid black;
+      }
+
+      figure img {
+      	max-width: 100%;
+      	padding: 0px 0px 15px 0px;
+      }
+
+      figcaption p {
+      	
+      	font-family: Gill Sans MT;
+      	font-size: 12pt;
+      	font-weight: bold;
+      	text-align: justify;
+      }
+
+      figcaption button {
+      	display: block;
+      	margin-left: auto;
+      	margin-right: auto;
+      }
+
+       button {
+        margin: 10px;
+        width: 150px;
+        height: 50px;
+        padding: 6px;
+        border: 2px solid #ff0000;
+        text-decoration: underline;
+        background-color: transparent;
+        color: #ff0000;
+        font-size: 10pt;
+        font-weight: bold;
+       }
+
+       button:hover {
+        background-color: #ff0000;
+        border: 2px solid #ff0000;
+        color: #fff;
+        transition: 0.5s;
+       }
+
+/* ------------------ RODAPE ----------------------*/
+
+      footer {
+        text-align: center;
+        background-color: #000;
+        padding: 15px;
+    }
+
+      footer p.endereco {
+        font-family: Gill Sans MT;
+        font-size: 11pt;
+        color: #fff;
+        margin-top: -5px;
+    }
+
+      a.fa {
+        padding: 0px;
+        text-decoration: none;
+        margin-top: 0px;
+        margin-left: 10px;
+     }
+
+       a.fa-facebook {
+        color: #fff; 
+       }
+
+       a.fa-instagram {
+         color: #fff;
+       }
+
+       .fa-facebook:hover {
+          color: #0000ff;
+        }
+
+       .fa-instagram:hover {
+          color: #E1306C;
+       }

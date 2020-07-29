@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, intial-scale=1, userscalable=no"/>
+       <title>Página Principal</title>
+       <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+      <body>
+        <!-------------------- MENU --------------->
+        <header>
+          <nav id="menu">
+              <div class="toggle">
+                <i class="fa fa-bars menu" aria-hidden="true"></i>
+              </div>
+               <ul class="lista">
+                 <li><a href="index.html"> Início </a></li>
+                 <li><a href="empresa.html"> A Empresa</a></li>
+                 <li><a href="produtos.html">Produtos</a></li>
+                 <li><a href="pedidos.html"> Pedidos </a></li> 
+                 <li><a href="contato.html"> Contato </a></li>
+              </ul>
+           </nav>
+         </header>
+
+         <div id="interface"></div>
+
+            <footer>
+                    <p class="endereco">RUA SANTO ANTÔNIO | NÚMERO 1631 | BAIRRO VILA GALVÃO | GUARULHOS - SP | 07071-000</p>
+
+                        <a href="https://www.facebook.com/Softexestofadosme/" class="fa fa-facebook" target="_blank">
+                        </a>
+                        <a href="https://instagram.com/softexhome?utm_source=ig_profile_share&igshid=1dtcjpzax4se5" class="fa fa-instagram" target="_blank"></a>
+            </footer>
+
+           <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+           <script type="text/javascript">
+              $(document).ready(function(){
+                $('.menu').click(function(){
+                  $('ul').toggleClass('active');
+                })
+              })
+           </script>
+     </body>
+</html>
+
+
+
+
+
+
+
+
+

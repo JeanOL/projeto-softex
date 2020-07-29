@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <head>
+        <title>Pedidos</title>
+        <script src="_js/pedidos.js"></script>
+     </head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="_css/pedidos.css"> 
+  
+
+    <body>
+            <!----------------------------- MENU ------------------------>
+        <header>
+          <nav id="menu">
+              <div class="toggle">
+                <i class="fa fa-bars menu" aria-hidden="true"></i>
+              </div>
+               <ul class="lista">
+                 <li><a href="index.html"> Início </a></li>
+                 <li><a href="empresa.html"> A Empresa</a></li>
+                 <li><a href="produtos.html">Produtos</a></li>
+                 <li><a href="pedidos.html"> Pedidos </a></li> 
+                 <li><a href="contato.html"> Contato </a></li>
+              </ul>
+           </nav>
+         </header>
+
+       <section id="banner">
+
+                <header id="cabecalho">
+                     <hgroup>
+                           <h1>Faça seu pedido</h1>
+                           <h2>PREENCHA SEUS DADOS</h2>
+                     </hgroup>
+                  </header>     
+             </section>   
+
+             <!-------------------- FORMULÁRIO ------------------------>
+
+            <table id="usuario">
+             <form name="formuser" method="post" action="grava-pedido.jsp"> 
+                  <tr>
+                    <td><input type="text" name="nome" id="cNome" maxlength="30" placeholder="NOME COMPLETO"></td>
+                    <td><input type="text" name="cpf" id="cCpf" maxlength="11" placeholder="CPF (EX: XXX.XXX.XXX-XX)"></td> 
+                  </tr>
+
+                  <tr>
+                    <td><input type="email" name="email" id="cMail" maxlength="40" placeholder="EMAIL (EX: nome@hotmail.com)"></td>                   
+                    <td><input type="text" name="cel" id="cCel" maxlength="11" placeholder="CEL (EX: (XX) XXXXX-XXXX)"></td>
+                  </tr>
+
+                  <tr>
+                    <td><input type="text" name="tel" id="cTel" maxlength="11" placeholder="TEL (EX: (XX) XXXXX-XXXX)"></td>
+                    <td><input type="date" name="nasc" id="cNasc"></td>
+                  </tr>
+         
+          </table>
+
+          <table id="caixas">
+                  <tr>
+                    <td>
+                      <p id="subCaixa"><label for="modelo">MODELO:</label>
+                      <select name="tMod" id="modelo">
+                        <option>-------</option>
+                        <option>BRICK ICE</option>
+                        <option>BROOKLYN</option>
+                        <option>CAPRICCIO</option>
+                        <option>DOMINO</option>
+                        <option>ERGO</option>
+                        <option>FLY</option>
+                        <option>KENDO</option>
+                        <option>KIPLING</option>
+                        <option>MAGNO</option>
+                        <option>MALIBU</option>
+                        <option>NOTTURNO</option>
+                        <option>OTTO</option>
+                        <option>SEVILHA</option>
+                        <option>VÊNUS</option>
+                        <option>WOODS</option>
+                      </select></p>
+                    </td>
+
+                    <td>
+                      <p><label for="tecido">TECIDO:</label>
+                        <select name="tTec" id="tecido">
+                        <option>-------</option>                          
+                          <option>COURO</option>
+                          <option>ESTAMPADO</option>
+                          <option>LINHO</option>
+                          <option>SINTÉTICO</option>
+                        </select>
+                    </td></p>
+
+                    <td>
+                      <p><label for="Ccor">COR:</label> 
+                         <input type="color" name="tCor" id="cCor"/>
+                    </td></p>
+                  </tr>   
+                </table>
+
+                    <div id="bt">
+                      <input class="button" type="submit" value="ENVIAR" onclick="return validar()">
+                      <input class ="button" type="reset" value="LIMPAR"> 
+                    </div> 
+                  
+                  </form>
+
+     <footer>
+            <p class="endereco">RUA SANTO ANTÔNIO | NÚMERO 1631 | BAIRRO VILA GALVÃO | GUARULHOS - SP | 07071-000</p>
+            <a href="https://www.facebook.com/Softexestofadosme/" class="fa fa-facebook" target="_blank">
+            </a>
+            <a href="https://instagram.com/softexhome?utm_source=ig_profile_share&igshid=1dtcjpzax4se5" class="fa fa-instagram" target="_blank"></a>
+      </footer>
+                   <!------------ SCRIPT MENU --------------->
+          <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+           <script type="text/javascript">
+              $(document).ready(function(){
+                $('.menu').click(function(){
+                  $('ul').toggleClass('active');
+                })
+              })
+           </script>
+    </body>    
+
+</html>

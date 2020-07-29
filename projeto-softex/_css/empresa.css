@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+ body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+/*------------- MENU -------------------*/
+
+    nav {
+        width: 100%;
+        background: #000;
+    }
+
+    ul {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    ul.lista li {
+        font-family: Gill Sans MT;
+        text-transform: uppercase;
+        list-style: none;
+        display: inline-block;
+        font-size: 12pt;
+        padding: 15px;
+    }
+
+
+    ul.lista li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    ul.lista li:hover {
+        background: red;
+        transition: 0.5s;
+    }
+
+    .toggle {
+        width: 100%;
+        padding: 10px 20px;
+        background: #000;
+        text-align: right;
+        box-sizing: border-box;
+        color: #fff;
+        font-size: 30px;
+        display: none;
+    }
+
+/*----------------- MENU RESPONSIVO -----------------*/
+    @media (max-width: 790px) 
+    {
+        .toggle {
+            display: block;
+        }
+
+    ul {
+        width: 100%;
+        display: none;
+    }
+
+    ul.lista li {
+        display: block;
+        text-align: center;
+    }
+
+    .active {
+        display: block;
+    }
+}
+
+/*------------------------- CORPO -----------------------*/
+
+      section {
+      	margin-bottom: 70px;
+      } 
+
+      header#cabecalho {
+      	background-color: red;
+      	margin: 0px;
+      	padding: 30px;
+      	margin-bottom: 70px;
+      }
+
+      header hgroup h1 {
+      	text-align: right;
+      	font-family: Gill Sans MT;
+      	font-style: italic;
+        margin-right: 20px;
+        color: #fff;
+        font-size: 4vw;
+      }
+
+      div#texto {
+
+      	 display: block;
+	     margin: 0 80px 0px 120px;
+	     padding: 10px 20px 10px 20px;
+      }
+
+      p.titulo {
+        font-weight: bold;
+      }
+
+      div p {
+	      text-align: justify;
+	      font-family: Gill Sans MT;
+	      font-size: 2vw;
+      }
+
+      div#texto p.titulo {
+      	font-size: 3vw;
+      }
+
+/* ------------------ RODAPE ----------------------*/
+
+      footer {
+        text-align: center;
+        background-color: #000;
+        padding: 15px;
+    }
+
+      footer p.endereco {
+        font-family: Gill Sans MT;
+        font-size: 11pt;
+        color: #fff;
+        margin-top: -5px;
+    }
+
+      a.fa {
+        padding: 0px;
+        text-decoration: none;
+        margin-top: 0px;
+        margin-left: 10px;
+     }
+
+       a.fa-facebook {
+        color: #fff; 
+       }
+
+       a.fa-instagram {
+         color: #fff;
+       }
+
+       .fa-facebook:hover {
+          color: #0000ff;
+        }
+
+       .fa-instagram:hover {
+          color: #E1306C;
+       }
